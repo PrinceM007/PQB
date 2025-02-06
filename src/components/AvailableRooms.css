@@ -1,0 +1,199 @@
+/* General Styles */ 
+body {
+  background-color: #fff; /* White background for the entire page */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.available-rooms {
+  padding: 0; /* Removed padding */
+  background-color: #fff; /* White background for available rooms */
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #02255b; /* Medium blue */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+} 
+
+/* Rooms Layout */
+.rooms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Two columns per row */
+  gap: 5; /* Removed space between cards */
+  padding: 10px; /* Removed padding */
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px; /* Removed margin */
+  margin-bottom: 30px;
+}
+
+.room-card {
+  background-color: #fcfcfe; /* Near white */
+  border: 1px solid #e0e0e0;
+  padding: 10px 10px 10px 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.room-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.room-info {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.room-info h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000041; /* Dark blue */
+}
+
+.room-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #02255b; /* Medium blue */
+}
+
+.room-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000041; /* Dark blue */
+  margin-top: 10px;
+}
+
+/* Booking Button */
+.book-btn {
+  background-color: #02255b; /* Medium blue */
+  color: #fcfcfe; /* Near white */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #000041; /* Dark blue */
+}
+
+/* Availability Status */
+.availability {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4CAF50; /* Available green */
+}
+
+.availability.unavailable {
+  color: #f44336; /* Unavailable red */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .rooms {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1080px) {
+  .rooms {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Confirmation Screen */
+.confirmation-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirmation-form {
+  background: #fcfcfe; /* Near white */
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.confirmation-form h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #000041; /* Dark blue */
+}
+
+.confirmation-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: #000041; /* Dark blue */
+}
+
+.confirmation-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+/* Confirmation Buttons */
+.confirmation-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.confirm-button,
+.cancel-button {
+  padding: 10px 15px;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-button {
+  background-color: #4CAF50; /* Confirm green */
+  color: white;
+}
+
+.cancel-button {
+  background-color: #f44336; /* Cancel red */
+  color: white;
+}

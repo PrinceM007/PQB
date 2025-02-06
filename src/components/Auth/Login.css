@@ -1,0 +1,195 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif; /* Modern, clean font */
+}
+
+body {
+  background-color: #f0f2f5; /* Neutral background for balance */
+}
+/* Center the Login Form with a Soft Gradient Background */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc, #e0e7ff); /* Soft lavender and blue gradient */
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Alternative: Vibrant Background */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #2c5364, #4ca1af); /* Deep teal gradient */
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Option: Neutral Background */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f6f8fa; /* Clean and minimal soft gray */
+}
+
+
+/* Center the Login Form with Gradient Background */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b3d91, #1e90ff); /* Vibrant gradient */
+  animation: fadeIn 1s ease-in-out;
+  background-image: url('https://www.example.com/your-background-image.jpg'); /* Add a background image */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay; /* Subtle blend for text readability */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Form Container */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.95); /* Translucent white for elegance */
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+  text-align: center;
+  transform: scale(0.95);
+  animation: popIn 0.5s ease forwards;
+  color: #333;
+}
+
+/* Pop-in animation for the form */
+@keyframes popIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Title Styling */
+h2 {
+  color: #0b3d91;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Consistent spacing between inputs */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: box-shadow 0.3s, border-color 0.3s;
+  background-color: #f9f9f9; /* Subtle background for contrast */
+}
+
+/* Focus State for Input Fields */
+input:focus {
+  outline: none;
+  border-color: #1e90ff;
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.4);
+}
+
+/* Placeholder Styling */
+input::placeholder {
+  font-style: italic;
+  color: #aaa;
+}
+
+/* Button Styling */
+button {
+  padding: 0.75rem;
+  background: linear-gradient(90deg, #0b3d91, #1e90ff); /* Gradient button */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover and Active States for Button */
+button:hover {
+  background: linear-gradient(90deg, #1e90ff, #0b3d91);
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(1px); /* Button presses down slightly */
+}
+
+/* Toggle Text Styling */
+.toggle-text {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #555; /* Softer color for secondary text */
+}
+
+.toggle-text span {
+  color: #1e90ff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.toggle-text span:hover {
+  color: #0b3d91;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 2rem;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    font-size: 0.9rem;
+  }
+}

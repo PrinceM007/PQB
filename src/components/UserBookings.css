@@ -1,0 +1,32 @@
+.user-bookings {
+    padding: 1rem;
+    background-color: #f8f9fa;
+  }
+  
+  h2 {
+    color: #02255b;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .booking-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-card h3 {
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
